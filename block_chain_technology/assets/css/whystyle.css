@@ -1,0 +1,62 @@
+/*
+sets the back ground color and text color
+*/
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Alef , sans-serif, serif, 'Courier New', Courier, monospace;
+}
+/*
+horizontal divider that acts as a partition
+*/
+hr{
+    display:block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+Aligns the main content of the page in the respective flex box and with the required alignments
+*/
+.content{
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-top:5%;
+    text-align: justify;
+    font-family: Alef,sans-serif,serif,'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+/*
+setting font-size and weight for the title
+*/
+
+header>h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline;
+}
+
+/*
+ensures the position of ham burger
+*/
+
+#nav{
+    display: inline-block;
+    margin-right:32%;
+    margin-left:-32%;
+    margin-top:2%;
+}
+
+/*
+ensures the position of home icon
+*/
+
+#home{
+    display: inline-block;
+    margin-right:-32%;
+    margin-left:32%;
+    margin-top:2%;
+}

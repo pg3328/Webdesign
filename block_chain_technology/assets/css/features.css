@@ -1,0 +1,88 @@
+/*
+sets the back ground color and text color
+*/
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Alef , sans-serif, serif, 'Courier New', Courier, monospace;
+}
+/*
+horizontal divider that acts as a partition
+*/
+hr{
+    display:block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+setting font-size and weight for the title
+*/
+h1{
+    font-size: 46px;
+    display:inline-block;
+}
+/*
+Aligns the main content of the page in the respective flex box and with the required alignments
+*/
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    text-align: justify;
+    font-family: Alef,sans-serif,serif,'Courier New', Courier, monospace;
+    font-size: 36px;
+    
+}
+/*
+content positioning. 
+*/
+#content{
+    margin-top: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+/*
+list elements display. 
+*/
+#list{
+    display: block;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:5%;
+}
+/*
+paragraph positioning.
+*/
+#para{
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+/*
+side navigation positioning. 
+*/
+#nav{
+    display: inline-block;
+    margin-right:39%;
+    margin-left:-37%;
+    margin-top:2%;
+}
+/*
+home icon positioning
+*/
+#home{
+    display: inline-block;
+    margin-right:-32%;
+    margin-left:32%;
+}
+/*
+anchor icon styling. 
+*/
+a{
+    text-decoration: underline;
+    color: white;
+}

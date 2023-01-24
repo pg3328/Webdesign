@@ -1,0 +1,106 @@
+/*
+sets the back ground color and text color
+*/
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Alef , sans-serif, serif, 'Courier New', Courier, monospace;
+}
+/*
+horizontal divider that acts as a partition
+*/
+hr{
+    display:block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+setting font-size and weight for the title
+*/
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+/*
+Aligns the main content of the page in the respective flex box and with the required alignments
+*/
+.content{
+    flex: 60%;
+    margin-top: 8%;
+    justify-content: left;
+    text-align: justify;
+    font-family: Alef, sans-serif,serif, 'Courier New', 'Courier New', Courier, monospace;
+    font-size: 36px;
+    margin-right:2%;
+}
+
+/*
+setting font-size and weight for the title
+*/
+
+header>h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline;
+
+}
+
+
+/*
+horizontal divider that acts as a partition
+*/
+
+
+body > hr{
+    display:block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+/*
+    footer representation of the page, alignments and size. 
+*/
+footer>p{
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+}
+
+/*
+ham burger positioning 
+*/
+
+#nav{
+    display: inline-block;
+    margin-right:20%;
+    margin-left:-15%;
+    margin-top:2%;
+}
+/*
+ensure that the body is a flex container
+*/
+#body{
+    display:flex;
+}
+/*
+image positioning
+*/
+
+#image{
+    flex:40%;
+    margin-top:9%;
+    display: inline-block;
+}
+
+/*
+ensure that the body is a flex container
+*/
+
+#flexcontainer{
+    display: flex;
+}

@@ -1,0 +1,92 @@
+/*
+sets the back ground color and text color
+*/
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Alef , sans-serif, serif, 'Courier New', Courier, monospace;
+}
+/*
+horizontal divider that acts as a partition
+*/
+hr{
+    display:block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+setting font-size and weight for the title
+*/
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+/*
+Aligns the main content of the page in the respective flex box and with the required alignments
+*/
+.content{
+    flex: 60%;
+    justify-content: left;
+    text-align: left;
+    font-family: Alef, sans-serif,serif, 'Courier New', 'Courier New', Courier, monospace;
+    font-size: 36px;
+    text-align: justify;
+    margin-left:-5%;
+    margin-right:2%;
+    margin-top:8%;
+}
+
+/*
+title positioning. 
+*/
+
+header>h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline;
+
+}
+/*
+horizontal line positioning. 
+*/
+body > hr{
+    display:block;
+    color: white;
+    margin-top: 10%;
+}
+/*
+ham burger positioning. 
+*/
+#nav{
+    display: inline-block;
+    margin-right:37%;
+    margin-left:-45%;
+    margin-top:2%;
+}
+/*
+image positioning. 
+*/
+#image{
+    flex:40%;
+    margin-top:9%;
+    display: inline-block;
+    margin-left:-5%;
+}
+/*
+ensuring flex container. 
+*/
+#flexcontainer{
+    display: flex;
+}
+/*
+home icon positioning. 
+*/
+#home{
+    display: inline-block;
+    margin-right:-36%;
+    margin-left:28%;
+    margin-top:1%;
+}

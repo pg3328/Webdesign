@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        var imagearray =[];
+        imagearray.push('assets/images/blockchain.png','assets/images/blockchain2.gif','assets/images/blockchain3.jpg');
+        var currentImage =1;
+        var imageinterval = setInterval(changeSlide, 3000);
+        function changeSlide(){
+            console.log('Change Slide');
+            imageplayer = document.getElementById("imageplayer")
+            console.log(imageplayer)
+            imageplayer.src=imagearray[currentImage++];
+            if(currentImage>=imagearray.length) currentImage=0;
+        
+        }
+    </script>
+    <title>Block Chain Technology</title>
+</head>
+<body>
+    <header>
+       <div id="nav"> 
+            <a href="navigation.html">
+                <img src="../project1/assets/images/handburger.jpeg" style="width:45px;height:45px;" alt ="Image not available">
+            </a>
+        </div>
+        <h1> A Glimpse into Blockchain Technology</h1>
+        <br><br>
+        <hr>
+    </header>
+        <div id="flexcontainer">
+            <div id="image">
+                <img src="../project1/assets/images/blockchain.png" id="imageplayer" alt="image not available">
+            </div>
+            <p class="content">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Blockchain  is a shared, immutable ledger that facilitates the process of recording transactions 
+                and tracking assets in a business network. An asset can be tangible (a house, car, cash, land) or intangible 
+                (intellectual property, patents, copyrights, branding). Virtually anything of value can be tracked and traded on a 
+                blockchain network, reducing risk, and cutting costs for all involved.
+            </p>
+        </div>
+    <hr>
+    <footer>
+        <p> &copy;&nbsp;Pradeep G</p>
+    </footer>
+    
+</body>
+</html>

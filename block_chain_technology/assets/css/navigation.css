@@ -1,0 +1,89 @@
+/*
+sets the back ground color and text color
+*/
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Alef , sans-serif, serif, 'Courier New', Courier, monospace;
+}
+/*
+horizontal divider that acts as a partition
+*/
+hr{
+    display:block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 17%;
+    margin-top: 1%;
+}
+
+/*
+Why positioning 
+*/
+#why{
+    font-size: 45px;
+    text-align: left;
+    font-family: Jacques Francois,sans-serif;
+     margin-top: 6%;
+    
+}
+/*
+How what and features positioning
+*/
+
+#How,#What,#Features{
+    display:block;
+    font-size: 45px;
+    text-align: left;
+    font-family: Jacques Francois,sans-serif;
+    margin-top: 3%;
+    margin-left:4%;
+    margin-right:7%;
+
+}
+/*
+title position and font weight. 
+*/
+
+header>h1{
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+/*
+cross positioning
+*/
+#x{
+    display: inline-block;
+    align-items: left;
+    margin-right:10%;
+    margin-left:-10%;
+}
+
+/*
+text in navigation positioning
+*/
+.left{
+    display:inline;
+    text-align: left;
+    margin-left:10%;
+    margin-right:45%;
+
+    
+}
+/*
+nav element positioning and display
+*/
+.right{
+    display: inline;
+}
+/*
+anchor elements decorations. 
+*/
+a{
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
