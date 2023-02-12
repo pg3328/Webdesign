@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Recipe Finder</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .ingredients-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-top: 50px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .recipe-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-top: 50px;
+      }
+      .recipe-image {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+      }
+      .recipe-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .recipe-calories {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .recipe-ingredients {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>You can cook {{result.title}}</h1>
+      {% if result %}
+      <div class="recipe-info">
+        <img class="recipe-image" src="{{ result.image }}" alt="Recipe Image">
+        <div class="recipe-title">{{ result.title }}</div>
+        <div class="recipe-calories">Calories per serving: {{ result.calories }}</div>
+        <div class="recipe-calories">Calories in words: {{ result.calorie_in_words }}</div>
+        <div class="recipe-ingredients">UsedIngredientsCount: {{ result.used_ingredient_Count}}</div>
+        <div class="recipe-ingredients">MissedIngredientsCount: {{ result.missed_ingredients_count }}</div>
+        <div class="recipe-ingredients">MissedIngredients: {{ result.missed_ingredients }}</div>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

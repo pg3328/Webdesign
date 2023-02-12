@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Recipe Finder</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .ingredients-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-top: 50px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .recipe-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-top: 50px;
+      }
+      .recipe-image {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+      }
+      .recipe-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .recipe-calories {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .recipe-ingredients {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipe Finder</h1>
+      <form class="ingredients-form" action="/submit" method="post">
+        <label for="ingredients">Enter Available Ingredients (Comma Separated):</label>
+        <input type="text" id="ingredients" name="ingredients">
+        <input type="submit" value="Find Recipe">
+      </form>
+    </div>
+  </body>
+</html>
